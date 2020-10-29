@@ -40,7 +40,7 @@ output "user_api_key_private" {
 output "user_ocid" {
   value = module.cm_backup.user_ocid
 }
-output = "user_api_key_fingerprint" {
+output "user_api_key_fingerprint" {
   value = module.cm_backup.user_api_key_fingerprint
 }
 ```
