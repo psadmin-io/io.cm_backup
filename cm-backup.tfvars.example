@@ -1,0 +1,15 @@
+tenancy_ocid = "ocid1.tenancy.oc1.."
+region = "us-ashburn-1"
+compartment_ocid = "ocid1.compartment.oc1.."
+bucket_name = "CM_Backups"
+
+# CM Backup User
+user_name = "cmbackups"
+user_description = "Cloud Manager Backups"
+user_email = "dan@example.com"
+group_name = "DBBackupUsers"
+group_description = "Database Backup Users"
+
+# CM Data Volume
+enable_volume_backup = true
+cm_data_volume_ocid = "ocid1.volume.oc1.iad."
