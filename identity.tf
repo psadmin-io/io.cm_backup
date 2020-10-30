@@ -27,8 +27,8 @@ resource "oci_identity_api_key" "cm_backup_api_key" {
 
 # API Key for user
 resource "tls_private_key" "user_api_key" {
-  algorithm = "RSA"
-  rsa_bits  = 4096
+    algorithm = "RSA"
+    rsa_bits  = 4096
 }
 
 resource "oci_identity_group" "cm_backup_group" {
