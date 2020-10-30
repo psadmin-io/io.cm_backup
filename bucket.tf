@@ -9,6 +9,7 @@ resource "oci_objectstorage_bucket" "cm_db_backups_bucket" {
 }
 
 resource "oci_objectstorage_object_lifecycle_policy" "cm_db_lifecycle_policy" {
+    depends_on = [oci_identity_policy.cm_backups_bucket_policy]
     bucket = oci_objectstorage_bucket.cm_db_backups_bucket.name
     namespace = data.oci_objectstorage_namespace.ns.namespace
 
