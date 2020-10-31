@@ -27,21 +27,10 @@ module "cm_backup" {
   user_description = "Cloud Manager Backups"
   user_email = "dan@example.com"
   group_name = "DBBackupUsers"
-  group_description = "Database Backup Users"
 
   # CM Data Volume
   enable_volume_backup = true
   cm_data_volume_ocid = "ocid1.volume.oc1.iad."
-}
-
-output "user_api_key_private" {
-  value = module.cm_backup.user_api_key_private
-}
-output "user_ocid" {
-  value = module.cm_backup.user_ocid
-}
-output "user_api_key_fingerprint" {
-  value = module.cm_backup.user_api_key_fingerprint
 }
 ```
 
