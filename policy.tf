@@ -1,5 +1,4 @@
 resource "oci_identity_policy" "cm_backups_bucket_policy" {
-    depends_on = [oci_identity_group.cm_backup_group]
     compartment_id = var.tenancy_ocid
     description = "Cloud Manager Backup Policies"
     name = "CloudManagerBackup"
